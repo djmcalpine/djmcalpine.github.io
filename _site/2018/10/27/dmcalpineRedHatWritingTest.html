@@ -1,0 +1,116 @@
+<h1 id="owncloud-quickstart-guide">ownCloud Quickstart Guide</h1>
+
+<p><a href="https://owncloud.org/">ownCloud</a> is a file sharing platform used to help you host your own private cloud server that allows you to do the following:</p>
+
+<ul>
+  <li>
+    <p>Securely access, edit, store, and view your data files from any device, anywhere, and any time.</p>
+  </li>
+  <li>
+    <p>Synchronize your files and folders and automatically upload your pictures and videos.</p>
+  </li>
+  <li>
+    <p>Integrate third-party storage on to your private cloud, such as Microsoft OnDrive and Dropbox.</p>
+  </li>
+  <li>
+    <p>Share files with others, and much more.</p>
+  </li>
+</ul>
+
+<h1 id="owncloud-server-installation">ownCloud Server Installation</h1>
+
+<p>If you are an administrator, complete the following tasks to install and configure the ownCloud server.</p>
+
+<h2 id="install-the-owncloud-server">Install the ownCloud Server</h2>
+
+<ol>
+  <li>Go to the <a href="https://owncloud.org/">ownCloud</a> website.</li>
+  <li>At the top right corner of the web page, click <strong>Download</strong>.</li>
+  <li>In the <strong>Download</strong> <a href="https://owncloud.org/download/">ownCloud</a> web page that appears, scroll to the <strong>ownCloud Server</strong> section.</li>
+  <li>Choose from the following ownCloud server installation options and download the appropriate installation image to the system on which you are installing the ownCloud server:
+    <ul>
+      <li><strong>Tarball</strong> - A common option for production environments. Select <strong>Download Tar</strong> to download the installation package.</li>
+      <li><strong>Docker</strong> - A Docker image is a file, comprised of multiple layers, used to execute code in a Docker container. Go to the <a href="https://github.com/owncloud-docker/server">ownCloud Server Docker image</a> for your Docker environment.</li>
+      <li><strong>Appliance</strong>-A virtual appliance is a pre-integrated, self-contained system that is made by combining server software with just enough operating system for it to run optimally on industry standard hardware or a virtual machine. Click one of the following desired appliance images to download: <strong>Download ESX image</strong>, <strong>Download VirtualBox image</strong>, <strong>Download QCOW2 image</strong>, or <strong>Download Vmware image</strong>.</li>
+      <li>In the <strong>Documentation</strong> section, click <a href="https://doc.owncloud.org/server/latest/admin_manual/installation/">Installation Guide</a>.</li>
+    </ul>
+  </li>
+  <li>In the <a href="https://doc.owncloud.org/server/latest/admin_manual/appliance/">ownCloud 10.0.10 Server Administration Manual</a> page choose from the following navigation menu installation instruction options for ownCloud on the left side of the page:
+    <ul>
+      <li>Click <a href="https://doc.owncloud.org/server/latest/admin_manual/installation/">Installation</a> to view linux server installation instructions.</li>
+      <li>Click <a href="https://doc.owncloud.org/server/latest/admin_manual/appliance/">The ownCloud X Appliance</a> to view appliance related installation instructions.</li>
+    </ul>
+  </li>
+  <li>Use the applicable tasks in the Installation section, to install the ownCloud server with the installation image you downloaded.</li>
+</ol>
+
+<h2 id="configure-the-owncloud-server">Configure the ownCloud Server</h2>
+
+<ol>
+  <li>On the <a href="https://doc.owncloud.org/server/latest/admin_manual/appliance/">ownCloud 10.0.10 Server Administration Manual</a> page, click <a href="https://doc.owncloud.org/server/latest/admin_manual/configuration/">Configuration</a> from the navigation menu on the left side of the page to view the ownCloud configuration instructions.</li>
+  <li>Use the applicable tasks in the <a href="https://doc.owncloud.org/server/latest/admin_manual/configuration/">Configuration</a> section that are used to configure the ownCloud server.</li>
+</ol>
+
+<h2 id="allow-users-to-connect-to-the-owncloud-server">Allow Users to Connect to the ownCloud Server</h2>
+
+<p>Use this task to set LDAP server parameters that allow users to access the ownCloud server by way of HTTP:</p>
+
+<ol>
+  <li>On the <a href="https://doc.owncloud.org/server/latest/admin_manual/appliance/">ownCloud 10.0.10 Server Administration Manual</a> page, click [Configuration](https://doc.owncloud.org/server/latest/admin_manual/configuration/ from the navigation menu.</li>
+  <li>In the expanded <strong>Configuration</strong> navigation menu, select <a href="https://doc.owncloud.org/server/latest/admin_manual/configuration/user/">User Management</a>.</li>
+  <li>Click [User Authentication with LDAP] to configure the LDAP server that is used to authenticate users so they can connect to the ownCloud server. In this task, the ownCloud server IP address and HTTP port (8080) can be specified.</li>
+</ol>
+
+<h2 id="add-a-user-to-owncloud-and-enable-them-to-connect-to-owncloud">Add a User to ownCloud and Enable Them to Connect to ownCloud</h2>
+
+<ol>
+  <li>On the <a href="https://doc.owncloud.org/server/latest/admin_manual/appliance/">ownCloud 10.0.10 Server Administration Manual</a> page, click <a href="https://doc.owncloud.org/server/latest/admin_manual/configuration/">Configuration</a> from the navigation menu on the left side of the page to view the ownCloud configuration instructions.</li>
+  <li>In the expanded <strong>Configuration</strong> navigation menu, select <a href="https://doc.owncloud.org/server/latest/admin_manual/configuration/user/">User Management</a>.</li>
+  <li>In the expanded <strong>User Management</strong> index that appears to the right of the navigation menu, click <a href="https://doc.owncloud.org/server/latest/admin_manual/configuration/user/user_configuration.html#creating-a-new-user">Creating a New User</a>.</li>
+  <li>Follow the instructions on how to add a new user in the <a href="https://doc.owncloud.org/server/latest/admin_manual/configuration/user/user_configuration.html#creating-a-new-user">Creating a New User page</a>.</li>
+  <li>Scroll down the page to the <a href="https://doc.owncloud.org/server/latest/admin_manual/configuration/user/user_configuration.html#managing-groups">Managing Groups</a> section.</li>
+  <li>Use the instructions there to add the user you created to a group. Once a user is assigned to a group, they can immediately access file shares that belong to their new groups.</li>
+</ol>
+
+<h1 id="user-client-installation">User Client Installation</h1>
+
+<p>If you are a user who wants to connect to ownCloud, complete the following tasks to access your user account from a desktop or mobile device.</p>
+
+<h2 id="access-your-owncloud-user-account-from-a-desktop">Access Your ownCloud User Account from a Desktop</h2>
+
+<ol>
+  <li>Go to the <a href="https://owncloud.org/">ownCloud</a> website.</li>
+  <li>At the top right corner of the web page, click <strong>Download</strong>.</li>
+  <li>In the <a href="https://owncloud.org/download/">Download ownCloud web page</a> that appears, scroll to the <strong>ownCloud Desktop Client</strong> section.</li>
+  <li>Choose from the following ownCloud client installation options and download the appropriate installation image to the system on which you are installing the ownCloud client:
+    <ul>
+      <li><strong>ownCloud desktop client for MacOS</strong></li>
+      <li><strong>ownCloud desktop client for Windows</strong></li>
+      <li><strong>ownCloud desktop client for Linux</strong></li>
+    </ul>
+  </li>
+  <li>Under the <strong>ownCloud Desktop Client</strong> section in the <strong>Documentation</strong> section, click <a href="https://doc.owncloud.org/desktop/latest/">User Manual</a>.</li>
+  <li>In the <strong>ownCloud Client Manual page</strong>, choose the <a href="https://doc.owncloud.org/desktop/latest/installing.html">Installing the Desktop Synchronization Client</a> navigation menu on the left side of the page to view installation instructions.</li>
+  <li>Use the applicable tasks in the <strong>Installing the Desktop Synchronization Client</strong> page, to install the ownCloud client with the installation image you downloaded.</li>
+</ol>
+
+<h2 id="access-your-owncloud-user-account-from-your-mobile-device">Access Your ownCloud User Account from your Mobile Device</h2>
+
+<ol>
+  <li>Go to the <a href="https://owncloud.org/">ownCloud</a> website.</li>
+  <li>At the top right corner of the web page, click <strong>Download</strong>.</li>
+  <li>In the <a href="https://owncloud.org/download/">Download ownCloud web page</a> that appears, scroll to the <strong>ownCloud Mobile Apps</strong> section.</li>
+  <li>Choose from the following ownCloud client mobile application options and download the appropriate application to the mobile device on which you are installing the ownCloud client:
+    <ul>
+      <li><strong>iOS</strong> – Scan or select the QR code with your Apple iOS device to go to the Apple App store.</li>
+      <li><strong>Android</strong> – Scan or select the QR code with your Android device to go to the Google Play store.</li>
+    </ul>
+  </li>
+  <li>Under the <strong>ownCloud Mobile Apps</strong> section in the <strong>Documentation</strong> section, select from the following installation instruction options:
+    <ul>
+      <li><strong>iOS</strong> – <a href="https://doc.owncloud.org/ios/ios&lt;em&gt;app.html">iOS app manual</a>.</li>
+      <li><strong>Android</strong> – <a href="https://doc.owncloud.org/android/android&lt;/em&gt;app.html">Android app manual</a>.</li>
+    </ul>
+  </li>
+  <li>Use each app manual to learn how to use the ownCloud application on your device.</li>
+</ol>
