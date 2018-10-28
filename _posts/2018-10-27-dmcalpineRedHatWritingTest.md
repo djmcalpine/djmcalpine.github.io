@@ -43,9 +43,9 @@ Allow Users to Connect to the ownCloud Server
 
 Use this task to set LDAP server parameters that allow users to access the ownCloud server by way of HTTP:
 
-1. On the [ownCloud 10.0.10 Server Administration Manual](https://doc.owncloud.org/server/latest/admin_manual/appliance/) page, click [Configuration](https://doc.owncloud.org/server/latest/admin_manual/configuration/ from the navigation menu.
+1. On the [ownCloud 10.0.10 Server Administration Manual](https://doc.owncloud.org/server/latest/admin_manual/appliance/) page, click [Configuration](https://doc.owncloud.org/server/latest/admin_manual/configuration/) from the navigation menu.
 2. In the expanded **Configuration** navigation menu, select [User Management](https://doc.owncloud.org/server/latest/admin_manual/configuration/user/).
-3. Click [User Authentication with LDAP] to configure the LDAP server that is used to authenticate users so they can connect to the ownCloud server. In this task, the ownCloud server IP address and HTTP port (8080) can be specified.
+3. Click [User Authentication with LDAP](https://doc.owncloud.org/server/latest/admin_manual/configuration/user/user_auth_ldap.html) to configure the LDAP server that is used to authenticate users so they can connect to the ownCloud server. In this task, the ownCloud server IP address and HTTP port (8080) can be specified.
 
 Add a User to ownCloud and Enable Them to Connect to ownCloud
 -------------------------------------------------------------
